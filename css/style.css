@@ -57,13 +57,17 @@ hr {
 }
 
 .navbar-nav a {
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
 }
 
 .navbar-brand {
     font-size: 25px;
     padding: 10px;
+}
+
+#contactpage{
+    margin-left:150px;
 }
 
 /* 側邊聯絡資訊 */
@@ -237,7 +241,7 @@ hr {
 }
 
 #school-achievement img {
-    width: 150px;
+    height: 150px;
 }
 
 #school-achievement .col {

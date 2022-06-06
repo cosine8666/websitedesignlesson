@@ -18,7 +18,7 @@
 }
 
 .book div{
-    background: linear-gradient(to bottom right, #fff, #ccc);
+    background: linear-gradient(to bottom right, #fff, #ccc);    
 }
 
 .book div{
@@ -28,6 +28,21 @@
 .book img{
     max-width: 100%;
     max-height: 200px;
+}
+
+.book h3{
+    text-align: center;
+}
+
+#universityicon{
+    text-align: center;
+}
+
+#universityicon img{
+    max-width: 40%;
+    max-height: 200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .page {
