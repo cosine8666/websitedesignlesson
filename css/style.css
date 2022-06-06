@@ -104,9 +104,13 @@ hr {
 }
 
 /* 學術成就 */
+
+#academic-achievement{
+    margin-bottom: 80px;
+}
+
 #academic-achievement .row {
     padding-top: 50px;
-
 }
 
 #academic-achievement img {
@@ -116,6 +120,10 @@ hr {
 /* 師資與人員 */
 #teachers {
     margin-top: 50px;
+}
+
+#teachers hr{
+    margin-bottom: 0px;
 }
 
 #teachers .teachers-list {
@@ -129,8 +137,8 @@ hr {
     /* 師資區塊橫列 */
     display: inline-block;
     height: 90px;
-    margin-top: -55px;
-    margin-bottom: -55px;
+    margin-top: -48.7px;
+    margin-bottom: -48.7px;
 }
 
 #teachers .teachers-list .teachers-list-row.teachers-list-offset {
@@ -145,6 +153,11 @@ hr {
     margin-left: 15px;
     margin-right: 15px;
     padding-bottom: -10px;
+    cursor: url("../source/cursor.png"),pointer;	
+}
+
+#teachers  .teachers-div-offset-2{
+    margin-left: 140px !important;
 }
 
 @media screen and (max-width:500px) {
@@ -180,20 +193,21 @@ hr {
 /* 教師介紹區 */
 #teacher-intro-bg {
     /* 背景圖片 */
-    background-image: url(../source/intro.jpeg);
+    background-image: url('../source/intro.jpeg');
     /* 背景滿版不重複，上下置中 */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 #teacher-intro {
     background-color: #212529;
     opacity: 0.95;
     width: 100%;
-    height: 450px;
+    height: 530px;
     margin-top: 50px;
-    padding-top: 70px;
+    padding-top: 70px; 
 }
 
 #teacher-intro-img {
