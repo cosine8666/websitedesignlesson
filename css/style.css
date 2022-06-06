@@ -1,0 +1,433 @@
+/*  */
+body {
+    overflow-x: hidden;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+/* 載入等待環 */
+#loader-c {
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader-c .spinner-border {
+    height: 200px !important;
+    width: 200px !important;
+}
+
+#loader-placholder {
+    height: 200px;
+}
+
+/*上排選單與系所簡介共同背景*/
+#navbar {
+    /* 這裡可以固定選單列在螢幕頂端，但移動裝置不一定會呈現穩定效果。 */
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar-intro-background {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 105%;
+    /* 背景圖片 */
+    background-image: url(../source/intro.jpeg) !important;
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* 上排選單 */
+#navbar {
+    opacity: 0.7 !important;
+    background-color: black !important;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* 側邊聯絡資訊 */
+.offcanvas {
+    background-color: black;
+    opacity: 0.7 !important;
+    color: white;
+}
+
+.offcanvas .offcanvas-body img{
+    width: 70px;
+    float: right;
+    /* margin-right: -100px;
+    margin-top: 200px; */
+}
+/* 
+.offcanvas .offcanvas-header  {
+    
+} */
+
+.offcanvas .offcanvas-body a {
+    color: white;
+}
+
+/* 覆寫側邊攔Bootstrap黑色按鈕為灰色 */
+.btn-close{
+    background: transparent url("../source/crossicon.png") center/1em auto no-repeat !important;
+}
+
+/* 簡介 */
+.introduction .row {
+    padding: 150px 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 學術成就 */
+#academic-achievement .row {
+    padding-top: 50px;
+
+}
+
+#academic-achievement img {
+    width: 100%;
+}
+
+/* 師資與人員 */
+#teachers {
+    margin-top: 50px;
+}
+
+#teachers .teachers-list {
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#teachers .teachers-list .teachers-list-row {
+    /* 師資區塊橫列 */
+    display: inline-block;
+    height: 90px;
+    margin-top: -55px;
+    margin-bottom: -55px;
+}
+
+#teachers .teachers-list .teachers-list-row.teachers-list-offset {
+    margin-left: 60px !important;
+}
+
+#teachers .teachers-list .teachers-list-row div {
+    /* 師資區塊橫列元素 */
+    display: inline-block;
+    width: 90px;
+    font-size: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: -10px;
+}
+
+@media screen and (max-width:500px) {
+
+    /* 螢幕小於500px時 */
+    #teachers .teachers-list {
+        width: 350px;
+    }
+
+    #teachers .teachers-list .teachers-list-row {
+        /* 師資區塊橫列 */
+        height: 70px;
+        margin-top: -43px;
+        margin-bottom: -43px;
+    }
+
+    #teachers .teachers-list .teachers-list-row.teachers-list-offset {
+        margin-left: 51px !important;
+    }
+
+    #teachers .teachers-list .teachers-list-row div {
+        display: inline-block;
+        width: 70px;
+    }
+}
+
+#teachers .teachers-list .teachers-list-row div img {
+    /* 師資區塊橫列元素圖片 */
+    display: block;
+    width: 100%;
+}
+
+/* 教師介紹區 */
+#teacher-intro-bg {
+    /* 背景圖片 */
+    background-image: url(../source/intro.jpeg);
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#teacher-intro {
+    background-color: #212529;
+    opacity: 0.95;
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    padding-top: 70px;
+}
+
+#teacher-intro-img {
+    padding-right: 20%;
+}
+
+@media screen and (max-width:700px) {
+
+    /* 畫面寬度小於500px */
+    #teacher-intro-img {
+        padding-right: 5%;
+    }
+}
+
+#teacher-intro-img img {
+    float: right;
+    width: 100%;
+    max-width: 300px;
+}
+
+#teacher-intro-text {
+    padding-left: 15%;
+    color: white;
+    font-size: 25px;
+}
+
+@media screen and (max-width:700px) {
+
+    /* 畫面寬度小於500px */
+    #teacher-intro-text {
+        padding-left: 30px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/* 各項表現 */
+#school-achievement {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#school-achievement .row {
+    padding-top: 50px;
+}
+
+#school-achievement img {
+    width: 150px;
+}
+
+#school-achievement .col {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* 其他成就 */
+#other-achievement {
+    /* 背景圖片 */
+    background-image: url(../source/child.jpg);
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#other-achievement .row {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 新聞幻燈片 */
+#news-carousel {
+    padding-top: 50px;
+}
+
+#news-carousel .row {
+    /* 背景圖片 */
+    background-image: url(../source/intro.jpeg);
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#carouselCaptions {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#news-carousel img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 系所介紹影片 */
+#intro-vedio {
+    margin-top: 50px;
+}
+
+#intro-vedio iframe {
+    width: 100%;
+}
+
+/* 課程地圖 */
+#class-map {
+    padding-top: 50px;
+}
+
+#class-map hr {
+    margin-bottom: 20px;
+}
+
+#class-map img {
+    /* height: 500px; */
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    --bs-nav-link-color: gray !important;
+    --bs-nav-link-hover-color: gray !important;
+}
+
+/* 學校地圖 */
+#school-map {
+    margin-top: 50px;
+}
+
+#school-map img {
+    width: 100%;
+}
+
+/* 翻書效果 */
+/* 實際的翻書效果驅動請參見book-flip.css與book-flip.js */
+#book-flip {
+    padding-top: 50px;
+}
+
+#book-background {
+    padding: 5px;
+    height: 600px;
+    width: 100%;
+    display: block;
+    background-image: url(../source/research-bg.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 招生連結 */
+#admissions-links {
+    padding-top: 50px;
+}
+
+#admissions-links a {
+    color: white !important;
+}
+
+#admissions-links #card01 .card {
+    transform: rotate(-2deg);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    /* 背景圖片 */
+    background-image: url(../source/admissions.jpg) !important;
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#admissions-links #card02 .card {
+    transform: rotate(2deg);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    /* 背景圖片 */
+    background-image: url(../source/papers.jpg) !important;
+    /* 背景滿版不重複，上下置中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+#admissions-links .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 20px;
+}
+
+#admissions-links .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#admissions-links .card :hover {
+    transition: 1s;
+    padding: 30px;
+    font-size: 30px;
+}
+
+
+
+/* 其他連結 */
+#other-links {
+    padding-top: 50px;
+}
+
+#other-links hr {
+    margin-bottom: 0px;
+}
+
+#other-links .row {
+    padding: 50px;
+    text-align: center;
+}
+
+#other-links a {
+    color: rgb(238, 69, 97);
+}
+
+/* 頁尾 */
+footer div p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer div p a {
+    color: pink;
+    text-decoration-line: none;
+    font-size: 18px;
+}
+
+footer div p a:hover {
+    color: palevioletred;
+}
